@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.0...v1.0.1) (2022-06-20)
+
+
+### Bug Fixes
+
+* remove firebase use default from GH action ([785a9a9](https://www.github.com/clarke-energia/foton-ui/commit/785a9a9db4248b8ed0347c51a96d887bec2cf734))
+* remove firebase use default from GH action ([785a9a9](https://www.github.com/clarke-energia/foton-ui/commit/785a9a9db4248b8ed0347c51a96d887bec2cf734))
+* remove firebase use default from GH action ([2b8dd57](https://www.github.com/clarke-energia/foton-ui/commit/2b8dd5779b542f0a38f4a11e12a8b25db2a5d9b3))
+
 ## 1.0.0 (2022-06-20)
 
 
