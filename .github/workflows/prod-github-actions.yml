@@ -27,8 +27,5 @@ jobs:
       - name: Build WebApp
         run: npm run build
 
-      - name: Change Firebase Host
-        run: firebase use default
-
       - name: Deploy
         run: firebase deploy --only hosting --token $FIREBASE_TOKEN
