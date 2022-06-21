@@ -20,7 +20,7 @@
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook --output-dir build",
     "lint": "eslint . --ext .ts"
   },
   "browserslist": {

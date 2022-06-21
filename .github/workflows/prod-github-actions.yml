@@ -25,7 +25,7 @@ jobs:
           npm install firebase-tools -g
 
       - name: Build WebApp
-        run: npm run build
+        run: npm run build-storybook
 
       - name: Deploy
         run: firebase deploy --only hosting --token $FIREBASE_TOKEN
