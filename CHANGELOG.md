@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.1...v1.0.2) (2022-06-21)
+
+
+### Bug Fixes
+
+* build-storybook CD configs ([864c553](https://www.github.com/clarke-energia/foton-ui/commit/864c5538d14dc8ac2bd88c69e6901f94b6249b9e))
+* build-storybook CD configs ([7337254](https://www.github.com/clarke-energia/foton-ui/commit/7337254fca534d2a06bb795e7f8c136d6897b5b4))
+
 ### [1.0.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.0...v1.0.1) (2022-06-20)
 
 
