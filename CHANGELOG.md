@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.4](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.3...v1.0.4) (2022-06-21)
+
+
+### Bug Fixes
+
+* use yarn instead of npm in CI ([edcd067](https://www.github.com/clarke-energia/foton-ui/commit/edcd067b31960331818daa949f98791b4b454707))
+* use yarn instead of npm in CI ([41a1359](https://www.github.com/clarke-energia/foton-ui/commit/41a1359637dfb7f22dc5052ea3946160170827f1))
+
 ### [1.0.3](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.2...v1.0.3) (2022-06-21)
 
 
