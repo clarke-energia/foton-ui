@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.5](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.4...v1.0.5) (2022-06-21)
+
+
+### Bug Fixes
+
+* export global yarn to $PATH ([977b9eb](https://www.github.com/clarke-energia/foton-ui/commit/977b9ebed430c48c6298006eff3a3e9fdc56ae85))
+
 ### [1.0.4](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.3...v1.0.4) (2022-06-21)
 
 
