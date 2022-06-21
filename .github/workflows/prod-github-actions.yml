@@ -34,7 +34,8 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
-          yarn add firebase-tools -g
+          yarn global add firebase-tools
+          export PATH="$(yarn global bin):$PATH"
 
       - name: Build WebApp
         run: yarn build-storybook
