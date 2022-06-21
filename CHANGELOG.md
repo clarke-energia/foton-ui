@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.2...v1.0.3) (2022-06-21)
+
+
+### Bug Fixes
+
+* firebaserc ([ebce47c](https://www.github.com/clarke-energia/foton-ui/commit/ebce47c938b2b48619d2ba25b36adebb6fb6d327))
+
 ### [1.0.2](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.1...v1.0.2) (2022-06-21)
 
 
