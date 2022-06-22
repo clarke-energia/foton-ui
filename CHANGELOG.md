@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.5...v1.1.0) (2022-06-22)
+
+
+### Features
+
+* brand color tokens story scaffold ([6123a6a](https://www.github.com/clarke-energia/foton-ui/commit/6123a6a2996484d52980c121a90e69538fdca02c))
+* brand colors tokens ([2da8110](https://www.github.com/clarke-energia/foton-ui/commit/2da81105c2a8bc0b04e59b06598af8d00405b1b4))
+* color token scaffolding ([a486434](https://www.github.com/clarke-energia/foton-ui/commit/a4864348c203806f9d3504c6c16706b9216bee00))
+* customize clarke theme ([26ef56c](https://www.github.com/clarke-energia/foton-ui/commit/26ef56c7dfe4090f2d30b5bdd71acba2ad531e51))
+* semantic color tokens ([36107ae](https://www.github.com/clarke-energia/foton-ui/commit/36107ae46fa6b9a21f2485493f34bf984ff383a9))
+* tailwindcss setup ([4d47701](https://www.github.com/clarke-energia/foton-ui/commit/4d4770124009a5aa00b36af3875672f1f8739bb9))
+
 ### [1.0.5](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.4...v1.0.5) (2022-06-21)
 
 
