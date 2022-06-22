@@ -21,6 +21,7 @@ const config: StorybookConfig = {
     disableTelemetry: true,
     enableCrashReports: false,
   },
+  staticDirs: ['./public'],
 };
 
 module.exports = config;

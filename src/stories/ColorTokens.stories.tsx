@@ -40,6 +40,7 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
           const shadeValue = value as PrimaryShadeValue;
           return (
             <Color
+              key={`${kind}-${value}`}
               label={colorTokens[shadeValue].id}
               shade={kind}
               value={shadeValue}
@@ -57,7 +58,7 @@ const ColorPaletteList: React.FC = () => {
   return (
     <div className="space-y-8 divide-y divide-black">
       {colorKinds.map((kind) => (
-        <ColorPalette kind={kind} />
+        <ColorPalette kind={kind} key={kind} />
       ))}
     </div>
   );
