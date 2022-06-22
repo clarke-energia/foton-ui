@@ -4,8 +4,9 @@ import { colors } from '../tokens.json';
 const brandColors = colors.brand;
 
 type PrimaryShadeValue = keyof typeof brandColors.primary;
+type BrandColor = keyof typeof brandColors;
 interface ColorPaletteProps {
-  kind: 'primary' | 'neutral';
+  kind: BrandColor;
 }
 
 interface ColorProps {
@@ -52,10 +53,12 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
 };
 
 const ColorPaletteList: React.FC = () => {
+  const colorKinds = Object.keys(brandColors) as BrandColor[];
   return (
     <div className="space-y-8 divide-y divide-black">
-      <ColorPalette kind="primary" />
-      <ColorPalette kind="neutral" />
+      {colorKinds.map((kind) => (
+        <ColorPalette kind={kind} />
+      ))}
     </div>
   );
 };
