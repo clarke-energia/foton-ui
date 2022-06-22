@@ -1,17 +1,23 @@
 import React from 'react';
 import { colors } from '../tokens.json';
 
+type ColorType = keyof typeof colors;
+
+// Semantic
+const semanticColors = colors.semantic;
+type SemanticColor = keyof typeof semanticColors;
+
+// Brand
 const brandColors = colors.brand;
 
-type PrimaryShadeValue = keyof typeof brandColors.primary;
 type BrandColor = keyof typeof brandColors;
 interface ColorPaletteProps {
-  kind: BrandColor;
+  kind: BrandColor | SemanticColor;
 }
 
 interface ColorProps {
   label: string;
-  value: PrimaryShadeValue;
+  value: '10' | '20' | '30' | '40' | '50' | '60' | '70' | '80' | '90' | '100';
   shade: ColorPaletteProps['kind'];
   hexCode: string;
 }
@@ -30,14 +36,30 @@ const Color: React.FC<ColorProps> = ({ label, value, shade, hexCode }) => {
   );
 };
 
+type ColorToken = Record<ColorProps['value'], { hex: string; id: string }>;
+
 const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
-  const colorTokens = brandColors[kind];
+  let colorTokens: Partial<ColorToken>;
+  switch (kind) {
+    case 'primary':
+    case 'neutral':
+      colorTokens = brandColors[kind];
+      break;
+
+    case 'warning':
+    case 'danger':
+      colorTokens = semanticColors[kind];
+      break;
+
+    default:
+      throw 'Invalid color selection';
+  }
   return (
     <div className="space-y-2">
       <h1 className="mt-4 text-lg font-bold capitalize">{kind}</h1>
       <div className="flex">
         {Object.keys(colorTokens).map((value) => {
-          const shadeValue = value as PrimaryShadeValue;
+          const shadeValue = value as ColorProps['value'];
           return (
             <Color
               key={`${kind}-${value}`}
@@ -53,8 +75,11 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
   );
 };
 
-const ColorPaletteList: React.FC = () => {
-  const colorKinds = Object.keys(brandColors) as BrandColor[];
+interface ColorPaletteListProps {
+  type: ColorType;
+}
+const ColorPaletteList: React.FC<ColorPaletteListProps> = ({ type }) => {
+  const colorKinds = Object.keys(colors[type]) as ColorPaletteProps['kind'][];
   return (
     <div className="space-y-8 divide-y divide-black">
       {colorKinds.map((kind) => (
@@ -80,4 +105,5 @@ export default {
   },
 };
 
-export const Brand = () => <ColorPaletteList />;
+export const Brand = () => <ColorPaletteList type="brand" />;
+export const Semantic = () => <ColorPaletteList type="semantic" />;

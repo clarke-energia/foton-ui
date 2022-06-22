@@ -3,15 +3,18 @@ let tokens = require('./src/tokens.json');
 const colorsTokens = tokens.colors;
 
 const generateCustomColorsFromTokens = (colorTokens) => {
-  const brandColors = colorTokens.brand;
-
   const customColors = {};
-  for (const color in brandColors) {
-    const brandColorDefinition = {};
-    for (const shade in brandColors[color]) {
-      brandColorDefinition[shade] = brandColors[color][shade].hex;
+
+  for (family in colorTokens) {
+    const colorFamily = colorTokens[family];
+
+    for (const color in colorFamily) {
+      const brandColorDefinition = {};
+      for (const shade in colorFamily[color]) {
+        brandColorDefinition[shade] = colorFamily[color][shade].hex;
+      }
+      customColors[color] = brandColorDefinition;
     }
-    customColors[color] = brandColorDefinition;
   }
   return customColors;
 };
@@ -28,5 +31,5 @@ module.exports = {
   /* see: https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
    * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
    */
-  safelist: [{ pattern: /bg-(primary|neutral)-.+/ }],
+  safelist: [{ pattern: /bg-(primary|neutral|warning|danger)-.+/ }],
 };
