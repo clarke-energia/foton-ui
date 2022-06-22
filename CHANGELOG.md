@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.1.0...v1.1.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* update yarn.lock ([b521469](https://www.github.com/clarke-energia/foton-ui/commit/b521469c6fbf1b74a1c4da56e806fc6101e051b3))
+
 ## [1.1.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.0.5...v1.1.0) (2022-06-22)
 
 
