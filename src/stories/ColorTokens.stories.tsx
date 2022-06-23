@@ -9,10 +9,14 @@ type SemanticColor = keyof typeof semanticColors;
 
 // Brand
 const brandColors = colors.brand;
-
 type BrandColor = keyof typeof brandColors;
+
+// Palette
+const paletteColors = colors.palette;
+type PaletteColor = keyof typeof paletteColors;
+
 interface ColorPaletteProps {
-  kind: BrandColor | SemanticColor;
+  kind: BrandColor | SemanticColor | PaletteColor;
 }
 
 interface ColorProps {
@@ -49,6 +53,13 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
     case 'warning':
     case 'danger':
       colorTokens = semanticColors[kind];
+      break;
+
+    case 'orange':
+    case 'blue':
+    case 'purple':
+    case 'pink':
+      colorTokens = paletteColors[kind];
       break;
 
     default:
@@ -107,3 +118,4 @@ export default {
 
 export const Brand = () => <ColorPaletteList type="brand" />;
 export const Semantic = () => <ColorPaletteList type="semantic" />;
+export const Palette = () => <ColorPaletteList type="palette" />;
