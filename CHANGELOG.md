@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.2.0...v1.3.0) (2022-06-23)
+
+
+### Features
+
+* typography tokens (fix commit) ([b5e9b57](https://www.github.com/clarke-energia/foton-ui/commit/b5e9b5703ea27814a31f2507f5ace6dee90c0e92))
+
 ## [1.2.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.1.1...v1.2.0) (2022-06-23)
 
 
