@@ -59,6 +59,6 @@ module.exports = {
   safelist: [
     { pattern: /bg-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/ },
     { pattern: /font-(normal|bold|black)/ },
-    { pattern: /text-(caption|paragraph|heading)-.+/ },
+    { pattern: /text-(caption|paragraph|heading|display)-.+/ },
   ],
 };

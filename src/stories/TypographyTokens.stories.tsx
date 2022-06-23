@@ -59,3 +59,4 @@ export default {
 export const Caption = () => <TypographyList type="caption" />;
 export const Paragraph = () => <TypographyList type="paragraph" />;
 export const Heading = () => <TypographyList type="heading" />;
+export const Display = () => <TypographyList type="display" />;
