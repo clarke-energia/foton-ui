@@ -9,10 +9,14 @@ type SemanticColor = keyof typeof semanticColors;
 
 // Brand
 const brandColors = colors.brand;
-
 type BrandColor = keyof typeof brandColors;
+
+// Palette
+const paletteColors = colors.palette;
+type PaletteColor = keyof typeof paletteColors;
+
 interface ColorPaletteProps {
-  kind: BrandColor | SemanticColor;
+  kind: BrandColor | SemanticColor | PaletteColor;
 }
 
 interface ColorProps {
@@ -49,6 +53,13 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
     case 'warning':
     case 'danger':
       colorTokens = semanticColors[kind];
+      break;
+
+    case 'orange':
+    case 'blue':
+    case 'purple':
+    case 'pink':
+      colorTokens = paletteColors[kind];
       break;
 
     default:
@@ -89,21 +100,17 @@ const ColorPaletteList: React.FC<ColorPaletteListProps> = ({ type }) => {
   );
 };
 
-const colorDescription = `Colors play important role on how people feel about a brand. 
-Colors evoke emotions directing the human to a response and therefore a decision making, 
-that is why it is important to have a consistent and well-minded usage of colors, focusing 
-on its intention. The core green color serves and the primary action color. Additional 
-colors are used sparingly and purposefully.`;
 export default {
   title: 'Design Tokens/Colors',
   parameters: {
-    docs: {
-      description: {
-        component: colorDescription,
-      },
+    options: { showPanel: false },
+    previewTabs: {
+      'storybook/docs/panel': { hidden: true },
     },
+    viewMode: 'story',
   },
 };
 
 export const Brand = () => <ColorPaletteList type="brand" />;
 export const Semantic = () => <ColorPaletteList type="semantic" />;
+export const Palette = () => <ColorPaletteList type="palette" />;

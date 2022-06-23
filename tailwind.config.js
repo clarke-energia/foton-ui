@@ -31,5 +31,5 @@ module.exports = {
   /* see: https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
    * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
    */
-  safelist: [{ pattern: /bg-(primary|neutral|warning|danger)-.+/ }],
+  safelist: [{ pattern: /bg-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/ }],
 };
