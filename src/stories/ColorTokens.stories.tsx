@@ -1,4 +1,5 @@
 import React from 'react';
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { colors } from '../tokens.json';
 
 type ColorType = keyof typeof colors;
@@ -100,19 +101,14 @@ const ColorPaletteList: React.FC<ColorPaletteListProps> = ({ type }) => {
   );
 };
 
-const colorDescription = `Colors play important role on how people feel about a brand. 
-Colors evoke emotions directing the human to a response and therefore a decision making, 
-that is why it is important to have a consistent and well-minded usage of colors, focusing 
-on its intention. The core green color serves and the primary action color. Additional 
-colors are used sparingly and purposefully.`;
 export default {
   title: 'Design Tokens/Colors',
   parameters: {
-    docs: {
-      description: {
-        component: colorDescription,
-      },
+    options: { showPanel: false },
+    previewTabs: {
+      'storybook/docs/panel': { hidden: true },
     },
+    viewMode: 'story',
   },
 };
 

@@ -16,7 +16,6 @@ const generateCustomColorsFromTokens = (colorTokens) => {
       customColors[color] = brandColorDefinition;
     }
   }
-  console.log(customColors);
   return customColors;
 };
 
