@@ -20,4 +20,6 @@ yarn storybook
 
 ## Tests
 
-In progress...
+```shell
+yarn test-storybook
+```
