@@ -33,7 +33,7 @@ const Color: React.FC<ColorProps> = ({ label, value, shade, hexCode }) => {
       <div className={[colorClass].join(' ')}>
         <p className="pr-16 pb-4 pl-4 font-bold">{label}</p>
       </div>
-      <p className="text-xs text-pink-600">{`$${shade}-${value}`}</p>
+      <p className="text-xs text-pink-600">{`$bg-${shade}-${value}`}</p>
       <p className="text-sm font-bold capitalize">{`${shade} ${value}`}</p>
       <p className="text-xs text-neutral-50">{hexCode}</p>
     </div>
