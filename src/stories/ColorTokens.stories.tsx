@@ -1,5 +1,4 @@
 import React from 'react';
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { colors } from '../tokens.json';
 
 type ColorType = keyof typeof colors;
