@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.1.1...v1.2.0) (2022-06-23)
+
+
+### Features
+
+* complete color tokens ([528b8ca](https://www.github.com/clarke-energia/foton-ui/commit/528b8caae98830c8dbf39c028033a0fb4100e828))
+* complete color tokens ([4ef1196](https://www.github.com/clarke-energia/foton-ui/commit/4ef11963c9a6c5514219fa1050a9127b8a206107))
+* run basic tests on pull request ([492ffff](https://www.github.com/clarke-energia/foton-ui/commit/492ffff2a81fd962c065a7e05da9c0ba02c0f059))
+
 ### [1.1.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.1.0...v1.1.1) (2022-06-22)
 
 
