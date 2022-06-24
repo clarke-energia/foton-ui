@@ -71,7 +71,7 @@ const BorderPalette: React.FC<BorderPaletteProps> = ({ type }) => {
 };
 
 export default {
-  title: 'Design Tokens/Borders & Lines',
+  title: 'Design Tokens/Borders',
   parameters: {
     options: { showPanel: false },
     previewTabs: {
