@@ -40,11 +40,22 @@ const generateFontSizeTokens = (typographyTokens) => {
   return fontSize;
 };
 
+// Border
+const borderTokens = tokens.border;
+const generateBorderRadiusTokens = (borderTokens) => {
+  const radiiMapping = {};
+  for (const radius in borderTokens) {
+    radiiMapping[radius] = `${borderTokens[radius]}px`;
+  }
+  return radiiMapping;
+};
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      borderRadius: generateBorderRadiusTokens(borderTokens),
       colors: generateCustomColorsFromTokens(colorsTokens),
       fontFamily: {
         sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
@@ -60,5 +71,6 @@ module.exports = {
     { pattern: /bg-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/ },
     { pattern: /font-(normal|bold|black)/ },
     { pattern: /text-(caption|paragraph|heading|display)-.+/ },
+    { pattern: /rounded(-.{1,2})*-(none|small|medium|large|pill)/ },
   ],
 };
