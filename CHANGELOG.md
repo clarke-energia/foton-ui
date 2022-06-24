@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.3.0...v1.4.0) (2022-06-24)
+
+
+### Features
+
+* border radius tokens ([#23](https://www.github.com/clarke-energia/foton-ui/issues/23)) ([80d4f46](https://www.github.com/clarke-energia/foton-ui/commit/80d4f467fe7d3f559e61d7a19fa00d2439ac1959))
+
 ## [1.3.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.2.0...v1.3.0) (2022-06-23)
 
 
