@@ -34,10 +34,10 @@ const SideBorder: React.FC<BorderProps> = ({ kind }) => {
 
 const CornerBorder: React.FC<BorderProps> = ({ kind }) => {
   return (
-    <div className="space-y-2">
+    <div className="space-y-4">
       {['tl', 'tr', 'br', 'bl'].map((corner) => (
         <React.Fragment key={`${corner}-${kind}`}>
-          <div className={`p-8 border-black rounded-${corner}-${kind} bg-slate-300`}></div>
+          <div className={`p-7 border-black rounded-${corner}-${kind} bg-slate-300`}></div>
           <div className="font-mono text-pink-50">{`$rounded-${corner}-${kind}`}</div>
         </React.Fragment>
       ))}
