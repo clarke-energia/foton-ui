@@ -1,5 +1,5 @@
 import React from 'react';
-import { line } from '../tokens.json';
+import { line } from '../../tokens.json';
 
 export default {
   title: 'Design Tokens/Lines',

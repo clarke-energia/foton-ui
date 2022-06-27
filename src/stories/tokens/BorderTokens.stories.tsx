@@ -1,5 +1,5 @@
 import React from 'react';
-import { border } from '../tokens.json';
+import { border } from '../../tokens.json';
 
 type Radius = keyof typeof border;
 interface BorderProps {
