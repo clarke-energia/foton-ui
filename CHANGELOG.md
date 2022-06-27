@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.4.0...v1.5.0) (2022-06-27)
+
+
+### Features
+
+* grid and spacing tokens ([#27](https://www.github.com/clarke-energia/foton-ui/issues/27)) ([b0dff3c](https://www.github.com/clarke-energia/foton-ui/commit/b0dff3c3fb9d9479cd159ffe4e6b4dbbffa162df))
+* line width tokens preview ([#25](https://www.github.com/clarke-energia/foton-ui/issues/25)) ([3341811](https://www.github.com/clarke-energia/foton-ui/commit/3341811d7f66834414709854b7b9773ccf9ef99d))
+
 ## [1.4.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.3.0...v1.4.0) (2022-06-24)
 
 
