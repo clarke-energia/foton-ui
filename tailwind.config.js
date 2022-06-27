@@ -72,5 +72,6 @@ module.exports = {
     { pattern: /font-(normal|bold|black)/ },
     { pattern: /text-(caption|paragraph|heading|display)-.+/ },
     { pattern: /rounded(-.{1,2})*-(none|small|medium|large|pill)/ },
+    { pattern: /border(-.{1}-\d)/ },
   ],
 };
