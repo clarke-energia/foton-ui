@@ -50,10 +50,21 @@ const generateBorderRadiusTokens = (borderTokens) => {
   return radiiMapping;
 };
 
+// Spacing
+const spacingTokens = tokens.spacing;
+const generateSpacingTokens = (spacingTokens) => {
+  const mapping = {};
+  for (const value in spacingTokens) {
+    mapping[value] = `${spacingTokens[value]}px`;
+  }
+  return mapping;
+};
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    spacing: generateSpacingTokens(spacingTokens),
     extend: {
       borderRadius: generateBorderRadiusTokens(borderTokens),
       colors: generateCustomColorsFromTokens(colorsTokens),
@@ -72,6 +83,8 @@ module.exports = {
     { pattern: /font-(normal|bold|black)/ },
     { pattern: /text-(caption|paragraph|heading|display)-.+/ },
     { pattern: /rounded(-.{1,2})*-(none|small|medium|large|pill)/ },
-    { pattern: /border(-.{1}-\d)/ },
+    { pattern: /border-.+/ },
+    { pattern: /space-.+/ },
+    { pattern: /p-.+/ },
   ],
 };
