@@ -1,5 +1,5 @@
 import React from 'react';
-import { typography } from '../tokens.json';
+import { typography } from '../../tokens.json';
 
 type FontSize = 'small' | 'medium' | 'large';
 type FontWeights = 'normal' | 'bold' | 'black';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { spacing } from '../tokens.json';
+import { spacing } from '../../tokens.json';
 
 export default {
   title: 'Design Tokens/Grids & Spacing/Spacing',

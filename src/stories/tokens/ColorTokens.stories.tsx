@@ -1,5 +1,5 @@
 import React from 'react';
-import { colors } from '../tokens.json';
+import { colors } from '../../tokens.json';
 
 type ColorType = keyof typeof colors;
 
