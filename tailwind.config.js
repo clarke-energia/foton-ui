@@ -79,7 +79,10 @@ module.exports = {
    * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
    */
   safelist: [
-    { pattern: /bg-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/ },
+    {
+      pattern: /bg-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/,
+      variants: ['hover', 'active', 'disabled', 'focus'],
+    },
     { pattern: /font-(normal|bold|black)/ },
     { pattern: /text-(caption|paragraph|heading|display)-.+/ },
     { pattern: /rounded(-.{1,2})*-(none|small|medium|large|pill)/ },
