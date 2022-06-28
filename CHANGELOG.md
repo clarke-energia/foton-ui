@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.5.0...v1.6.0) (2022-06-28)
+
+
+### Features
+
+* main button component ([#28](https://www.github.com/clarke-energia/foton-ui/issues/28)) ([c731a4a](https://www.github.com/clarke-energia/foton-ui/commit/c731a4a850dbb9bf1454544e029716aa5bea9e58))
+
 ## [1.5.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.4.0...v1.5.0) (2022-06-27)
 
 
