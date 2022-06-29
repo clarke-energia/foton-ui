@@ -4,6 +4,7 @@ interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 const Checkbox: React.FC<CheckboxProps> = ({ label, ...attrs }) => {
+  // discard whatever type is set in 'attrs' and fix it into checkbox
   const { type, id, disabled, className, ...rest } = attrs;
   const disabledClass = disabled ? 'text-neutral-40' : 'text-black';
   return (
