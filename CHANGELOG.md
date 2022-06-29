@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.6.0...v1.7.0) (2022-06-29)
+
+
+### Features
+
+* checkbox component ([#30](https://www.github.com/clarke-energia/foton-ui/issues/30)) ([3e17539](https://www.github.com/clarke-energia/foton-ui/commit/3e1753983780ca1eb7e415cadd7dbd1b1c735536))
+
 ## [1.6.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.5.0...v1.6.0) (2022-06-28)
 
 
