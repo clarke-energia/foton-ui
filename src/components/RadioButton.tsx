@@ -1,18 +1,20 @@
 import React from 'react';
 
-interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface RadioButtonProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
-const Checkbox: React.FC<CheckboxProps> = ({ label, ...attrs }) => {
-  // discard whatever type is set in 'attrs' and fix it into checkbox
+
+const RadioButton: React.FC<RadioButtonProps> = ({ label, ...attrs }) => {
+  // discard whatever type is set in 'attrs' and fix it into radio button
   const { type, id, disabled, className, ...rest } = attrs;
   const disabledClass = disabled ? 'text-neutral-40' : 'text-black';
+
   return (
     <div className="flex items-center">
       <input
-        type="checkbox"
+        type="radio"
         id={id}
-        className="rounded border-black focus:ring-2 focus:ring-offset-2 accent-primary-60 focus:ring-primary-60"
+        className="rounded border border-black focus:ring-2 focus:ring-offset-2 accent-primary-60 focus:ring-primary-60"
         disabled={disabled}
         {...rest}
       />
@@ -23,4 +25,4 @@ const Checkbox: React.FC<CheckboxProps> = ({ label, ...attrs }) => {
   );
 };
 
-export default Checkbox;
+export default RadioButton;
