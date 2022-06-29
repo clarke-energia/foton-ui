@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.7.0...v1.8.0) (2022-06-29)
+
+
+### Features
+
+* radio button component ([#32](https://www.github.com/clarke-energia/foton-ui/issues/32)) ([ce90584](https://www.github.com/clarke-energia/foton-ui/commit/ce90584fb76b540b4b0a5ad1fa9d5f0d4c13cdac))
+
 ## [1.7.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.6.0...v1.7.0) (2022-06-29)
 
 
