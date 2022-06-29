@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.8.0...v1.9.0) (2022-06-29)
+
+
+### Features
+
+* select component ([#34](https://www.github.com/clarke-energia/foton-ui/issues/34)) ([b656e46](https://www.github.com/clarke-energia/foton-ui/commit/b656e4692f60d0590852462c8073a73e78ad2673))
+
 ## [1.8.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.7.0...v1.8.0) (2022-06-29)
 
 
