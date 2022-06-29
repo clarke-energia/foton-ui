@@ -74,7 +74,7 @@ module.exports = {
       fontSize: generateFontSizeTokens(typographyTokens),
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
   /* see: https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
    * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
    */
