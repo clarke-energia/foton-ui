@@ -9,7 +9,11 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 const Select: React.FC<SelectProps> = ({ label, options, placeholderText, error, ...attrs }) => {
   const { id, disabled, className, ...rest } = attrs;
   const disabledClass = disabled ? 'text-neutral-40' : 'text-black';
-  const errorClass = error ? 'outline-none border border-danger-60 ring-danger-60' : '';
+  const errorClass = disabled
+    ? 'outline-none border ring-0'
+    : error
+    ? 'outline-none border border-danger-60 ring-danger-60'
+    : '';
   const focusClass = error
     ? 'focus:border focus:outline-none focus:border-danger-60 focus:ring-danger-60'
     : 'focus:border focus:outline-none focus:border-primary-60 focus:ring-primary-60';
