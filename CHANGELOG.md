@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.9.0...v1.10.0) (2022-06-29)
+
+
+### Features
+
+* text input component ([#36](https://www.github.com/clarke-energia/foton-ui/issues/36)) ([2b6de07](https://www.github.com/clarke-energia/foton-ui/commit/2b6de07f75dad8eb67f921f55b52406ac6d0a06e))
+
 ## [1.9.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.8.0...v1.9.0) (2022-06-29)
 
 
