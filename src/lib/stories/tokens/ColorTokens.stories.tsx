@@ -74,9 +74,11 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ kind }) => {
           return (
             <Color
               key={`${kind}-${value}`}
+              // @ts-ignore
               label={colorTokens[shadeValue].id}
               shade={kind}
               value={shadeValue}
+              // @ts-ignore
               hexCode={colorTokens[shadeValue].hex}
             />
           );

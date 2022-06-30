@@ -1,6 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-const tokens = require('../tokens.json');
+import tokens from '../tokens.json';
 
 // Colors
 const colorsTokens = tokens.colors;
@@ -73,6 +73,4 @@ const fotonTheme = {
   },
 };
 
-module.exports = {
-  theme: fotonTheme,
-};
+export default fotonTheme;

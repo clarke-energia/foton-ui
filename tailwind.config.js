@@ -1,9 +1,9 @@
-const { theme } = require('./src/lib/tailwind/plugin');
+const fotonTheme = require('./src/lib/tailwind/plugin').default;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme,
+  theme: fotonTheme,
   plugins: [require('@tailwindcss/forms')],
   /* see: https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
    * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
