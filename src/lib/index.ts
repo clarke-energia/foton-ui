@@ -5,6 +5,6 @@ import RadioButton from './components/RadioButton';
 import Select from './components/Select';
 import HeroIcon from './components/HeroIcons';
 
-import fotonTheme from './tailwind/plugin';
+import * as fotonTailwind from './tailwind/plugin';
 
-export { Button, Checkbox, TextInput, RadioButton, Select, HeroIcon, fotonTheme as fotonTailwindTheme };
+export { Button, Checkbox, TextInput, RadioButton, Select, HeroIcon, fotonTailwind };

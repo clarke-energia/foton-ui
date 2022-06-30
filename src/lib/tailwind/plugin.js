@@ -61,8 +61,7 @@ const generateSpacingTokens = (spacingTokens) => {
   return mapping;
 };
 
-const fotonTheme = {
-  spacing: generateSpacingTokens(spacingTokens),
+export const theme = {
   extend: {
     borderRadius: generateBorderRadiusTokens(borderTokens),
     colors: generateCustomColorsFromTokens(colorsTokens),
@@ -70,7 +69,22 @@ const fotonTheme = {
       sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
     },
     fontSize: generateFontSizeTokens(typographyTokens),
+    spacing: generateSpacingTokens(spacingTokens),
   },
 };
 
-export default fotonTheme;
+/* see: https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
+ * and: https://tailwindcss.com/docs/content-configuration#using-regular-expressions
+ */
+export const safelist = [
+  {
+    pattern: /(text|bg)-(primary|neutral|warning|danger|orange|blue|purple|pink)-.+/,
+    variants: ['hover', 'active', 'disabled', 'focus'],
+  },
+  { pattern: /font-(normal|bold|black)/ },
+  { pattern: /text-(caption|paragraph|heading|display)-.+/ },
+  { pattern: /rounded(-.{1,2})?-(none|small|medium|large|pill)/ },
+  { pattern: /border-.+/ },
+  { pattern: /space-.+/ },
+  { pattern: /(p|m).?-.+/ },
+];
