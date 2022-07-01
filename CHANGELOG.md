@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.11.0...v1.11.1) (2022-07-01)
+
+
+### Bug Fixes
+
+* yarn publish public access ([#41](https://www.github.com/clarke-energia/foton-ui/issues/41)) ([ff3f0d3](https://www.github.com/clarke-energia/foton-ui/commit/ff3f0d36726219d6d2f125b80254ce3b64d76bee))
+
 ## [1.11.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.10.0...v1.11.0) (2022-07-01)
 
 
