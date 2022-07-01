@@ -1,0 +1,24 @@
+name: Publish NPM package on release
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    name: Setup Nodejs and publish the package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+      - uses: actions/checkout@v3
+
+      - name: Setup node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Publish the package
+      - run: yarn
+      - run: yarn publish --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
