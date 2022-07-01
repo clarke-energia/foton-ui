@@ -30,7 +30,7 @@ yarn storybook
 
 ```javascript
 // tailwind.config.js
-const fotonTailwind = require('@clarke/foton').fotonTailwind
+const fotonTailwind = require('@clarke-energia/foton').fotonTailwind
 
 module.exports = [
   //...
