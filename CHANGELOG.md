@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.11.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.10.0...v1.11.0) (2022-07-01)
+
+
+### Features
+
+* publish to NPM action ([#38](https://www.github.com/clarke-energia/foton-ui/issues/38)) ([ceb78d2](https://www.github.com/clarke-energia/foton-ui/commit/ceb78d276a8939eb17e12e83867c3a00cfe65fe2))
+
+
+### Bug Fixes
+
+* npm publish github action steps ([#40](https://www.github.com/clarke-energia/foton-ui/issues/40)) ([3f72b53](https://www.github.com/clarke-energia/foton-ui/commit/3f72b532afc3924d68795a5d764c9ca7c8756dfc))
+
 ## [1.10.0](https://www.github.com/clarke-energia/foton-ui/compare/v1.9.0...v1.10.0) (2022-06-29)
 
 
