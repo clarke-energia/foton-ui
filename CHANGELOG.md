@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.2](https://www.github.com/clarke-energia/foton-ui/compare/v1.11.1...v1.11.2) (2022-07-01)
+
+
+### Bug Fixes
+
+* npm org name ([#43](https://www.github.com/clarke-energia/foton-ui/issues/43)) ([dad2d26](https://www.github.com/clarke-energia/foton-ui/commit/dad2d2653e8fad78194eb3df72f2197a3fcad0fa))
+
 ### [1.11.1](https://www.github.com/clarke-energia/foton-ui/compare/v1.11.0...v1.11.1) (2022-07-01)
 
 
