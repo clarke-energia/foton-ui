@@ -21,6 +21,6 @@ jobs:
         run: yarn
 
       - name: Publish the package
-        run: yarn publish --frozen-lockfile
+        run: yarn publish --frozen-lockfile --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
