@@ -1,5 +1,5 @@
 {
-  "name": "foton-ui",
+  "name": "@clarke/foton",
   "version": "1.10.0",
   "description": "Partículas que compõem a luz e podem ser definidos como pequenos “pacotes” que transportam a energia contida nas radiações eletromagnéticas.",
   "author": "Clarke Energia",
@@ -11,11 +11,16 @@
     "url": "https://github.com/clarke-energia/foton-ui/issues"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "build": "tsup src/lib/index.ts --dts --format cjs,esm",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
@@ -40,6 +45,12 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "vite-plugin-svgr": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@heroicons/react": "^1.0.6",
+    "react": "^17.0.2",
+    "tailwindcss": "^3.1.3",
+    "@tailwindcss/forms": "^0.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -75,6 +86,7 @@
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.3",
     "ts-node": "^10.8.1",
+    "tsup": "^6.1.2",
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
     "vitest": "^0.15.1"
